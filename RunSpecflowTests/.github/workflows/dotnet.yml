@@ -30,4 +30,4 @@ jobs:
       with:
         name: SpecflowLogs
         path: |
-          CalculatorResults.trx
+          CalculatorResults.trx  
