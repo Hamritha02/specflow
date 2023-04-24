@@ -48,7 +48,7 @@ inputs:
   logger-file-name:
     description: "Dotnet test log file name; required if logger is defined (example: MyTestResults.trx)"
     required: true
-    default: 'null'
+    default: 'CalculatorResults.trx'
   upload-artifact:
     description: "Set to false to disable uploading <LivingDoc.html> artifact automatically"
     required: true
@@ -95,7 +95,7 @@ runs:
       uses: actions/upload-artifact@v3
       with:
         name: 'Specflow Test Results'
-        path: ${{ inputs.output-html }}
+        path: ${{ inputs.output.tar }}
     - name: ReturnCode
       run: |
         exit "${_EXIT:-0}"
