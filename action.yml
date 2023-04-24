@@ -95,7 +95,7 @@ runs:
       uses: actions/upload-artifact@v3
       with:
         name: 'Specflow Test Results'
-        path: ${{ inputs.output.tar }}
+        path: ../RunSpecflowTests
     - name: ReturnCode
       run: |
         exit "${_EXIT:-0}"
