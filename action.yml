@@ -8,7 +8,7 @@ branding:
 inputs:
   test-assembly-path:
     description: "Path of the working directory for build assemblies (example: MySpecflowProject/bin/Debug/netcoreapp3.1)"
-    required: true
+    required: false
     default: 'RunSpecflowTests/Features'
   test-assembly-dll:
     description: "Relative path of <MySpecflowProject.dll> (example: MySpecflowProject/bin/Debug/netcoreapp3.1/MySpecflowProject.dll or MySpecflowProject.dll if using test-assembly-path)"
