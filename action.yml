@@ -47,11 +47,11 @@ inputs:
     default: 'null'
   logger-file-name:
     description: "Dotnet test log file name; required if logger is defined (example: MyTestResults.trx)"
-    required: true
-    default: 'CalculatorResults.trx'
+    required: false
+    default: 'null'
   upload-artifact:
     description: "Set to false to disable uploading <LivingDoc.html> artifact automatically"
-    required: true
+    required: false
     default: 'true'
 runs:
   using: composite
